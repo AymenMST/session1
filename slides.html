@@ -5,7 +5,7 @@
 -->
 
 <section>
-  <h3>Session 1 : Notion de base de l'orienté objet. </h3>
+  <h3>Session 1 : Notions de base de l'orienté objet. </h3>
 	<ul>
 	<li class="fragment">Programmation impérative VS Programmation Orienté objet 
 </li>
@@ -27,23 +27,11 @@
 			<p class="fragment">Quelle est la structure de votre code? 
 </p>
 </section>
-	<section>
-<p class="fragment">Représentation procédurale:</p> 
-<ul><li>Séparer les données des traitements.</li>
-<li>Subdivision basée sur les traitements. </li></ul> 
-
-   </section>
-   
-   <section>
-<p class="fragment">Représentation Objet:</p> 
-<ul><li>Manipuler un ensemble d’objets qui interagissent entre eux.</li>
-<li>Subdivision basée sur les données. </li></ul> 
-
-   </section>
+ 
    <section>
    <div style="position:absolute;width:100%" class="fragment fade-in-then-out">
 
-				<img src="img/poo_pp.jpg"></img>
+				<img src="img/poo_pp.png"></img>
 			</div>
    </section>
 		</section>
@@ -69,7 +57,7 @@
 	<section>
 		<h5>La programmation orienté objet</h5>
 		</br>
-		<p class="fragment">La POO est une méthode d’implémentation dans laquelle les programmes sont organisés sous formes de collections coopératives <i>d ’objets</i>.</p>
+		<p class="fragment">La POO est une approche dans laquelle les programmes sont organisés sous-forme de collections coopératives <i>d ’objets</i>.</p>
 	
 	</section>
 	
@@ -146,9 +134,9 @@
 
 	<section>
 	<h4>Classe et objet</h4>
-		<p class="fragment">La classe est la machine qui fabrique les objets. Elle peut être considérée comme un moule ou un modèle à partir duquel on peut créer des objets.
+		<p class="fragment">Elle peut être considérée comme un moule ou un modèle à partir duquel on peut créer des objets.
 </p>
-<p class="fragment">Des objets créés à partir de la même classe auront des aspects semblables (mêmes attributs et même méthodes).
+<p class="fragment">Des objets créés à partir de la même classe auront des aspects semblables (mêmes attributs et mêmes méthodes mais non les mêmes valeurs).
 </p>
 
 	</section>
@@ -187,7 +175,6 @@
 /** instructions de définition des champs et des méthodes
  de la classe*/
 		       }</code></pre>
-		<p class="fragment"> Une classe ne peut pas être utilisée pour executer des programmes. Pour cela il faut l’instancier (créer des objets).</p>
 
 		</section>
 	<section>
@@ -200,8 +187,6 @@
 			<li class="fragment">Initialiser les coordonnées d’un point.
 </li>
 			<li class="fragment">Déplacer ce point dans le plan. 
-</li>
-			<li class="fragment">Faire une rotation de ce point.
 </li>
 <li class="fragment">Afficher les coordonnées de ce point
 </li>
@@ -217,7 +202,7 @@
 			<ul>
 						<li class="fragment">de type élémentaire: entier, réel (float, double), booléen, caractère. 
 </li>
-			<li class="fragment">de type objet.
+			<li class="fragment">référence.
 </li>
 			</ul></li>
 			</ul>
@@ -248,7 +233,7 @@
 	</br>
 	<h5>Les constructeurs </h5>
 	<ul>
-			<li class="fragment">Un constructeur est une méthode spéciale utilisée pour crée un nouvel objet. Le constructeur se caractérise par:
+			<li class="fragment">Un constructeur est une méthode spéciale utilisée pour créer un nouvel objet. Le constructeur se caractérise par:
 			<ul>
 			<li class="fragment">Il a le même nom que celui de la classe.
 </li>
@@ -345,7 +330,7 @@ return rayon ;
 <pre class="fragment"><code class="hljs java"> class Circle1 extends point{
 int rayon;
 	Circle1 (int r){
-	super();
+	super(0);
 	rayon=r;
 	}
 }
